@@ -1,6 +1,5 @@
 public class Node<T> {
     private T t;
-    private Node<T> list;
     private Node<T> next;
 
     public void set(T t) {
@@ -15,17 +14,8 @@ public class Node<T> {
         return t;
     }
 
-    public T get(int i) {
-        return list.get(i);
-    }
-
-    public Node<T> nextNode() {
+    public Node<T> getNext() {
         return next;
-    }
-
-    public T root() {
-        return list.get(0);
-
     }
 
     public String toString() {
