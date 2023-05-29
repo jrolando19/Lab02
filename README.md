@@ -44,7 +44,14 @@
 </<tr>
 <tr><td colspan="6">DOCENTES:
 <ul>
-<li>Richart Smith Escobedo Quispe - rescobedoq@unsa.edu.pe</li>
+<li>Dra. Karim Guevara Puente de la Vega
+
+Mg. Richart Smith Escobedo Quispe
+
+Mg. Edith Giovanna Cano Mamani
+
+Mg. Jeymi Valdivia Eguiluz</li>
+
 </ul>
 </td>
 </<tr>
@@ -92,6 +99,8 @@
 - https://docs.oracle.com/javase/tutorial/java/generics/types.html
 
 ## EJERCICIO RESUELTO POR EL DOCENTE
+
+- TODO SE ENCUENTRA BREVEMENTE DETALLADO EN EL INFORME ENVIADO AL CORREO A LA PROFESORA ENCARGADA
 
 #
 
@@ -156,6 +165,8 @@
     ```
 
 ## EJERCICIOS PROPUESTOS
+
+- TODO SE ENCUENTRA DETALLADO EN EL INFORME PDF ENVIADO RESPECTIVAMENTE A LA PROFESORA ENCARGADA
 
 - 1. Invertir un matriz de enteros (2 pts)
 
