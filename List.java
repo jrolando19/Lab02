@@ -1,5 +1,5 @@
 public class List<T> {
-    protected Node<T> root;
+    private Node<T> root;
 
     // Constructores
     public List(T data) {
@@ -40,8 +40,8 @@ public class List<T> {
             while (nodoActual.getNext() != null) {// bucle que recorre nodo por nodo
                 nodoActual = nodoActual.getNext();// asigna a nodoActual el nodo siguiente
             }
-            nodoActual.set(newNode);// Cuando llega al nodo final asigna a nodoActual como el siguiente nodo
-                                    // vinculado
+            nodoActual.setNext(newNode);// Cuando llega al nodo final asigna a nodoActual como el siguiente nodo
+            // vinculado
         }
     }
 
