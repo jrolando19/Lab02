@@ -29,4 +29,29 @@ public class List<T> {
             setRoot(newNode);// Asigna como nodo de cabecera a newNode
         }
     }
+
+    // Inserta un nodo al final
+    public void insertarAlFinal(T data) {
+        if (this.root == null)
+            this.root = new Node<T>(data);
+        else {
+            Node<T> newNode = new Node<T>(data);// crea un nodo
+            Node<T> nodoActual = root;
+            while (nodoActual.getNext() != null) {// bucle que recorre nodo por nodo
+                nodoActual = nodoActual.getNext();// asigna a nodoActual el nodo siguiente
+            }
+            nodoActual.set(newNode);// Cuando llega al nodo final asigna a nodoActual como el siguiente nodo
+                                    // vinculado
+        }
+    }
+
+    public String toString() {
+        String listado = "";
+        Node<T> nodoActual = root; // Asigna a nodoActual el nodo cabecera (root)
+        while (nodoActual != null) {// bucle que recorre la lista
+            listado += nodoActual.toString() + "\n";// concatena el nodoActual como cadena al string listado
+            nodoActual = nodoActual.getNext();// pasa al siguiente nodo enlazado
+        }
+        return listado;
+    }
 }
