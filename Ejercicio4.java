@@ -57,13 +57,17 @@ public class Ejercicio4 {
 
                     break;
                 case 8:
+                    System.out.println("La lista esta vacia: " + personas.isEmpty());
 
                     break;
                 case 9:
+                    System.out.println("Posicion: " + personas.lastIndexOf(registro()));
 
                     break;
                 case 10:
-
+                    System.out.println("Introduce la posicion de la persona a eliminar");
+                    int posicion3 = scan.nextInt();
+                    System.out.println(personas.remove(posicion3));
                     break;
                 case 11:
 
