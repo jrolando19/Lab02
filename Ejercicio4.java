@@ -2,12 +2,12 @@ import java.util.*;
 
 public class Ejercicio4 {
     public static Scanner scan = new Scanner(System.in);
-    public static List<Persona> personas = new ArrayList();
+    public static List<Persona> personas = new ArrayList<Persona>();
 
     public static void main(String[] args) {
         int opcion = 0;
         while (opcion != 14) {
-            System.out.println("Escoge un número del menú");
+            System.out.println("\nEscoge un número del menú");
             System.out.println("1. Agregar elementos a la lista");
             System.out.println("2. Agregar elemento especifico a la lista");
             System.out.println("3. Elimina toda la lista");
@@ -32,31 +32,28 @@ public class Ejercicio4 {
                 case 2:
                     System.out.println("Introduce la posicion");
                     int posicion = scan.nextInt();
-                    System.out.println("Introduce tu nombre");
-                    String nombre = scan.next();
-                    System.out.println("Introduce tu edad");
-                    int edad = scan.nextInt();
-                    System.out.println("Introduce tu género");
-                    String genero = scan.next();
-                    System.out.println("Introduce tu nota: ");
-                    double nota = scan.nextInt();
-                    Persona persona = new Persona(nombre, edad, genero, nota);
-                    personas.add(posicion, persona);
+                    personas.add(posicion, registro());
+                    System.out.print(personas);
                     break;
 
                 case 3:
-
+                    personas.clear();
+                    System.out.print(personas);
                     break;
                 case 4:
-
+                    System.out.println("Es: " + personas.contains(registro()));
                     break;
                 case 5:
+                    // System.out.println("Es: "+personas.equals(registro()));
 
                     break;
                 case 6:
-
+                    System.out.println("Introduce la posicion");
+                    int posicion2 = scan.nextInt();
+                    System.out.println(personas.get(posicion2));
                     break;
                 case 7:
+                    System.out.println("Posicion: " + personas.indexOf(registro()));
 
                     break;
                 case 8:
@@ -109,6 +106,19 @@ public class Ejercicio4 {
             personas.add(persona);
         }
 
+    }
+
+    public static Persona registro() {
+        System.out.println("Introduce tu nombre");
+        String nombre = scan.next();
+        System.out.println("Introduce tu edad");
+        int edad = scan.nextInt();
+        System.out.println("Introduce tu género");
+        String genero = scan.next();
+        System.out.println("Introduce tu nota: ");
+        double nota = scan.nextInt();
+        Persona persona = new Persona(nombre, edad, genero, nota);
+        return persona;
     }
 
 }
