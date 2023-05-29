@@ -90,7 +90,7 @@ public class Ejercicio4 {
         int n;
         Persona persona;
         do {
-            System.out.print("Número personas? ");
+            System.out.print("Número personas: ");
             n = scan.nextInt();
         } while (n < 0);
         scan.nextLine();
