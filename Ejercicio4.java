@@ -17,25 +17,24 @@ public class Ejercicio4 {
             System.out.println("7. En que posicion se encuentra determinada persona (primera aparición)");
             System.out.println("8. Verificar si la lista está vacia");
             System.out.println("9. En que posicion se encuentra determinada persona (última aparición)");
-            System.out.println("10. Eliminar una persona en específico");
-            System.out.println("11. Reemplazar una persona por otra");
-            System.out.println("12. Cuántas personas hay en la lista");
-            System.out.println("13. Que personas hay de una a otra posicion determinada");
-            System.out.println("14. Salir");
+            System.out.println("10. Eliminar una persona por su posición");
+            System.out.println("11. Eliminar una persona por sus datos");
+            System.out.println("12. Reemplazar una persona por otra");
+            System.out.println("13. Cuántas personas hay en la lista");
+            System.out.println("14. Que personas hay de una a otra posicion determinada");
+            System.out.println("15. Salir");
             opcion = scan.nextInt();
             switch (opcion) {
                 case 1:
                     introducirDatos();
                     System.out.print(personas);
                     break;
-
                 case 2:
                     System.out.println("Introduce la posicion");
                     int posicion = scan.nextInt();
                     personas.add(posicion, registro());
                     System.out.print(personas);
                     break;
-
                 case 3:
                     personas.clear();
                     System.out.print(personas);
@@ -45,7 +44,6 @@ public class Ejercicio4 {
                     break;
                 case 5:
                     // System.out.println("Es: "+personas.equals(registro()));
-
                     break;
                 case 6:
                     System.out.println("Introduce la posicion");
@@ -54,32 +52,35 @@ public class Ejercicio4 {
                     break;
                 case 7:
                     System.out.println("Posicion: " + personas.indexOf(registro()));
-
                     break;
                 case 8:
                     System.out.println("La lista esta vacia: " + personas.isEmpty());
-
                     break;
                 case 9:
                     System.out.println("Posicion: " + personas.lastIndexOf(registro()));
-
                     break;
                 case 10:
                     System.out.println("Introduce la posicion de la persona a eliminar");
                     int posicion3 = scan.nextInt();
                     System.out.println(personas.remove(posicion3));
+                    System.out.println(personas);
                     break;
                 case 11:
-
+                    System.out.println("Se eliminó la persona: " + personas.remove(registro()));
+                    System.out.println(personas);
                     break;
                 case 12:
-
+                    System.out.println("Se eliminó la persona: " + personas.remove(registro()));
+                    System.out.println(personas);
                     break;
                 case 13:
-
+                    System.out.println("Hay " + personas.size() + " personas");
                     break;
                 case 14:
-
+                    System.out.println("Introduce el rango de posiciones de la sublista");
+                    int posicion5 = scan.nextInt();
+                    int posicion6 = scan.nextInt();
+                    System.out.println(personas.subList(posicion5, posicion6));
                     break;
 
             }
